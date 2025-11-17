@@ -6,7 +6,6 @@ const DIFFICULTY_OPTIONS: QuizDifficulty[] = ['easy', 'medium', 'hard'];
 
 export class CreateQuizDto {
   @IsString()
-  @IsNotEmpty()
   topic!: string;
 
   @Transform(({ value }) => Number(value))
